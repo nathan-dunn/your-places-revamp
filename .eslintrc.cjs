@@ -12,9 +12,16 @@ module.exports = {
   settings: { react: { version: '18.2' } },
   plugins: ['react-refresh'],
   rules: {
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
+    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+    'no-console': 'off',
+    'no-constant-condition': 'warn',
+    'no-unreachable': 'warn',
+    'no-unused-labels': 'warn',
+    'no-use-before-define': 'off',
+    'react/prop-types': 'off',
+    'no-restricted-globals': 'warn',
+    'no-useless-concat': 'off',
+    'no-unused-vars': 'warn',
+    'no-useless-escape': 'off',
   },
-}
+};

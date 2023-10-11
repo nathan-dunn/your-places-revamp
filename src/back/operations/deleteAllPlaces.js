@@ -1,4 +1,3 @@
-// const PlaceModel = require('../models/placeModel');
 import PlaceModel from '../models/placeModel';
 
 const { MODE } = import.meta.env;

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { connect } from 'react-redux';
 
 import Fresh from './Fresh';
@@ -50,7 +50,5 @@ const mapDispatchToProps = dispatch => ({
   getStackFromStorage: latest => dispatch(actions.getStackFromStorage(latest)),
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(Board);
+const _Board = connect(mapStateToProps, mapDispatchToProps)(Board);
+export default _Board;

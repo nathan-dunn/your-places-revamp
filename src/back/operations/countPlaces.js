@@ -1,4 +1,3 @@
-// const PlaceModel = require('../models/placeModel');
 import PlaceModel from '../models/placeModel';
 
 export default async (req, res) => {

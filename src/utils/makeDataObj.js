@@ -1,7 +1,3 @@
-// const makeQueryObj = require('./makeQueryObj');
-// const { makePlaceArr } = require('../utils/input');
-// const scraper = require('./scraper');
-// const { HEADER, DELETION } = require('../constants/misc');
 import makeQueryObj from './makeQueryObj';
 import { makePlaceArr } from '../utils/input';
 import scraper from './scraper';

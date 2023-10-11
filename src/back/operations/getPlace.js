@@ -1,5 +1,3 @@
-// const { fetchFromWebsites } = require('../../utils/websitesApi');
-// const PlaceModel = require('../models/placeModel');
 import { fetchFromWebsites } from '../../utils/websitesApi';
 import PlaceModel from '../models/placeModel';
 

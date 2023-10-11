@@ -1,26 +1,32 @@
-body {
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  background-color: black;
-  color: white;
+:root {
+  --BLACK: rgba(0,0,0.07);
+  --WHITE: #f5f5f5
 }
 
-.main-color {
-  background-color: black;
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",sans-serif;  
+
+  background-color: var(--BLACK);
+  color: var(--WHITE);
+}
+
+.main-color {  
+  background-color: var(--BLACK);
 }
 
 .input-color {
-  color: black;
-  background-color: #f5f5f5;
+  color: var(--BLACK);
+  background-color: var(--WHITE);
 }
 
 input:disabled {
-  background: #f5f5f5;
+  background: var(--WHITE);
 }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: black;
+  color: var(--BLACK);
   opacity: 1; /* Firefox */
 }
 
@@ -38,9 +44,4 @@ input:disabled {
 
 .border-none {
   border: none;
-}
-
-.s-alert-info {
-  /* background: #75C7EA !important; */
-  color: #fff !important;
 }

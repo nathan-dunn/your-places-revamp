@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Searching = ({ places }) => {
   return (
     <div className="searching ma2 pa2 center tc">

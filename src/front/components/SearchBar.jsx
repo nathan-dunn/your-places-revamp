@@ -1,10 +1,8 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
-// import Alert from 'react-s-alert';
 import * as actions from '../actions';
 import { makeQueryStr } from '../../utils/input';
-// import { showInfo } from '../../utils/alerts';
-import { VALIDATE_ERROR, DEFAULT_INPUT } from '../../constants/misc';
+import { DEFAULT_INPUT } from '../../constants/misc';
 
 class SearchBar extends Component {
   state = {
@@ -52,7 +50,6 @@ class SearchBar extends Component {
             placeholder="CITY, STATE"
           />
         </form>
-        {/* <Alert stack={{ limit: 3 }} /> */}
       </div>
     );
   }
@@ -66,4 +63,5 @@ const mapDispatchToProps = dispatch => ({
   searchPlace: input => dispatch(actions.searchPlace(input)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);
+const _Search = connect(mapStateToProps, mapDispatchToProps)(SearchBar);
+export default _Search;
