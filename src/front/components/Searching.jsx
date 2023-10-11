@@ -1,9 +1,10 @@
-const Searching = ({ places }) => {
+import spinner from '../../assets/spinner.gif';
+
+const Searching = () => {
   return (
     <div className="searching ma2 pa2 center tc">
-      <div className="center">
-        <span className="f5 ">Searching for </span>
-        <span className="f5 b">{places}</span>
+      <div className="center flex flex-column items-center">
+        <img src={spinner} alt="spinner" style={{ height: 100, width: 100 }} />
       </div>
     </div>
   );

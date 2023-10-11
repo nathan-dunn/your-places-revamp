@@ -26,7 +26,7 @@ class Board extends Component {
     const isFresh = Array.isArray(places) && places.length === 0;
 
     return (
-      <div className="board main-color w-90 center f7 mb6">
+      <div className="board w-90 center f7 pb1">
         {isFresh ? (
           <Fresh places={places} />
         ) : havePlaces ? (

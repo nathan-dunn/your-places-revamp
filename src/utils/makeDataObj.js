@@ -5,7 +5,6 @@ import { HEADER, DELETION } from '../constants/misc';
 
 const makeDataObj = entry => {
   const { _id, place, html } = entry;
-
   const queryObj = makeQueryObj(makePlaceArr(place));
 
   let obj = {};
@@ -33,10 +32,6 @@ const makeDataObj = entry => {
   obj['Divorced'] = scraper(html, 'people', 'are divorced', -10, 0);
   obj['Married With Children'] = scraper(html, 'people', 'are married with children', -10, 5);
   obj['Single With Children'] = scraper(html, 'people', 'have children, but are single', -10, 5);
-  obj['White'] = scraper(html, 'people', 'are white', -10, 5);
-  obj['Black'] = scraper(html, 'people', 'are black', -10, 5);
-  obj['Hispanic'] = scraper(html, 'people', 'claim Hispanic', -10, 5);
-  obj['Asian'] = scraper(html, 'people', 'are asian', -10, 5);
 
   obj.CRIME = HEADER;
   obj['Violent Crime'] = scraper(html, 'crime', 'violent crime is', 0, 15);

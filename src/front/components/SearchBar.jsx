@@ -34,16 +34,14 @@ class SearchBar extends Component {
     const { isSearching } = this.props;
 
     return (
-      <div className="main-color w-90 center tc ma3">
+      <div className="w-90 center tc " style={{ marginTop: 50 }}>
         <form onSubmit={this.handleSubmit}>
           <input
             ref={inputDOM => {
               this.inputDOM = inputDOM;
             }}
             disabled={isSearching ? true : false}
-            className={`input-color input-reset outline-none ba b--gray ma2 pa2 tc i br4 f6 ${
-              isSearching && 'main-color'
-            }`}
+            className={'input-color input-reset outline-none ba b--gray ma2 pa2 tc i br4 f6'}
             type="search"
             value={input}
             onChange={this.handleChange}
