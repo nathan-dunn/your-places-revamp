@@ -1,8 +1,3 @@
-// const axios = require('axios');
-// const makeQueryObj = require('./makeQueryObj');
-// const { makePlaceArr } = require('./input');
-// const { AREA_VIBES_URL, BEST_PLACES_URL } = require('../constants/websiteUrls');
-// const { START_KEY, END_KEY } = require('../constants/misc');
 import axios from 'axios';
 import makeQueryObj from './makeQueryObj';
 import { makePlaceArr } from './input';
@@ -14,7 +9,7 @@ const areaVibesPaths = [
   'demographics',
   'amenities',
   'cost-of-living',
-  // 'crime',
+  'crime',
   'education',
   'employment',
   'housing',

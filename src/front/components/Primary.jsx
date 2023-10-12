@@ -2,7 +2,7 @@ import { Component } from 'react';
 import startCase from 'lodash/startCase';
 import { HEADER, DELETION } from '../../constants/misc';
 
-class Primary extends Component {
+export default class Primary extends Component {
   render() {
     const { places, handleDeleteClick } = this.props;
     const place = places[0];
@@ -53,5 +53,3 @@ class Primary extends Component {
     );
   }
 }
-
-export default Primary;

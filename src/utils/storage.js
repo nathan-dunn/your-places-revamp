@@ -1,4 +1,3 @@
-// const uniqBy = require('lodash/uniqBy');
 import uniqBy from 'lodash/uniqBy';
 
 export const getPlacesFromStorage = () => JSON.parse(sessionStorage.getItem('places'));

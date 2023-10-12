@@ -1,8 +1,3 @@
-/* eslint-disable no-unused-vars */
-
-// const { startCase, toUpper } = require('lodash');
-// const { replaceSpacesWith } = require('./input');
-// const { stateAbbreviations } = require('./states');
 import { startCase, toUpper } from 'lodash';
 import { replaceSpacesWith } from './input';
 import { stateAbbreviations } from './states';

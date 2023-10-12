@@ -1,5 +1,3 @@
-/* eslint-disable no-unreachable, no-unused-expressions  */
-// const { START_KEY, END_KEY } = require('../constants/misc');
 import { START_KEY, END_KEY } from '../constants/misc';
 
 const findStartIndex = (code, term, mod) => {

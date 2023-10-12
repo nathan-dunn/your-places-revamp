@@ -11,6 +11,19 @@ body {
   color: var(--WHITE);
 }
 
+.page {
+  height: 100%;
+}
+
+.app {
+  background: radial-gradient(circle,#5666A3, #394473, #313854);
+  overflow: scroll;
+}
+
+.board {
+
+}
+
 .title {
   font-family: 'Lobster', sans-serif;
   font-size: 60px;
@@ -19,10 +32,6 @@ body {
 .icon {
   padding: 50px;
   font-size: 200px;
-}
-
-.main-color {  
-  background: radial-gradient(circle,#5666A3, #394473, #313854);
 }
 
 .input-color {
