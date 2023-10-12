@@ -19,7 +19,6 @@ export default class App extends Component {
             width: isBrowser ? 400 : '100vw',
             height: isBrowser ? '90vh' : '100vh',
             overflow: 'scroll',
-            border: isBrowser ? '2px solid #787878' : 'none',
           }}
         >
           <SearchBar />
