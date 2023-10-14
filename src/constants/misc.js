@@ -1,4 +1,4 @@
-export const DEFAULT_INPUT = '';
+export const DEFAULT_INPUT = 'Austin, TX';
 export const VALIDATE_ERROR = "HMM, THAT CAN'T BE RIGHT";
 export const START_KEY = '@@@';
 export const END_KEY = '###';
